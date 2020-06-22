@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="system" preserve-order="true">
+    <test name="订单">
+        <classes>
+            <class name="TestCase.orderTest">
+                <methods>
+                    <include name="login"></include>
+                    <include name="getAddressId"></include>
+                    <include name="order_test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="Listener.RetryListenerLinstener"></listener>
+        <listener class-name="Listener.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>
